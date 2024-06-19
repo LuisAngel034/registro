@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <script src="./brain.js"></script>
+    <link rel="stylesheet" href="../calculadora IMC/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Calculadora de IMC</h1>    
+        <h3 class="subtitle">Captura el valor 1</h3>
+        <input class="input" type="number" id="v1">
+        <h3 class="subtitle">Captura el valor 2</h3>
+        <input class="input" type="number" id="v2"><br>
+        
+        <div class="botonera">
+            <button class="button" onclick="calcular('suma')">Suma</button>
+            <button class="button" onclick="calcular('resta')">Resta</button>
+            <button class="button" onclick="calcular('multiplicacion')">Multiplicación</button>
+            <button class="button" onclick="calcular('division')">División</button>
+        </div>
+
+        <h3 class="subtitle">Resultado</h3>
+        <h3 class="subtitle" id="res">...</h3>
+    </div>
+    
+</body>
+</html>

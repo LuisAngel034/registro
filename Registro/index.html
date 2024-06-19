@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../Registro/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Practica validación</h1>
+        <h2 class="subtitle">Registro de Usuario</h2>
+
+        <form action="">
+            <label for="numTrab">Numero de Trabajador</label>
+            <input class="input" type="text" placeholder="Numero de trabajador" name="numTrab" id="numTrab" required pattern="ʌ(0|1){1}[0-9]{3}">
+
+            <label for="name">Nombre de Usuario:</label>
+            <input type="text" class="input" required placeholder="Nombre" maxlength="25" pattern="[a-AZ-Z\s]+">
+            
+            <label for="name">Apellido Paterno:</label>
+            <input type="text" class="input" required placeholder="Apellido Paterno" maxlength="25" pattern="[a-AZ-Z\s]+">
+
+            <label for="name">Apellido Materno:</label>
+            <input type="text" class="input" required placeholder="Apellido Materno" maxlength="25" pattern="[a-AZ-Z\s]+">
+
+            <label for="edad">Edad</label>
+            <input type="number" class="input" required min="18" max="99" placeholder="Edad"> <!--step="2" funciona para saltos-->
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="input" required maxlength="50" placeholder="Email">
+
+            <label for="pass">Password:</label>
+            <input type="password" class="input" minlength="8" required placeholder="Password" maxlength="20" name="pass" id="pass" pattern="[A-Z]+"> 
+
+            <label for="pass2">Confirmar Password:</label>
+            <input type="password" class="input" minlength="8" required placeholder="Confirmar Password" maxlength="20" name="pass2" id="pass2"> 
+
+            <input type="submit" class="button" onclick="validaPass()">
+        </form>
+        <script src="../Registro/main.js"></script>
+    </div>
+</body>
+</html>

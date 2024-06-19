@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../Formulario/images/fonfo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #28a745;
+}
+input:hover{
+    border-color: #06eca7;
+}
+select:hover{
+    border-color: #06eca7;
+}
+
+.button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+.button:hover {
+    background-color: #218838;
+}
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+}
+.phone-wrapper select {
+    width: 30%;
+    margin-right: 5px;
+}
